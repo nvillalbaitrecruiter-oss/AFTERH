@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfteRH Office & AfteRH Talent</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 20%, rgba(124, 58, 237, 0.15) 0%, rgba(15, 23, 42, 1) 70%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="bg-slate-900 p-2 rounded-xl border border-slate-800 flex items-center gap-2">
+                    <span class="text-xl font-extrabold tracking-tight text-white">Afte<span class="text-brand-500">RH</span> Office</span>
+                    <i class="fa-solid fa-microphone-lines text-brand-500"></i>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#inicio" class="hover:text-brand-500 transition">Inicio</a>
+                <a href="#servicios" class="hover:text-brand-500 transition">Consultoría (AfteRH Talent)</a>
+                <a href="#stream" class="hover:text-brand-500 transition">AfteRH Office Stream</a>
+                <a href="#sobre-mi" class="hover:text-brand-500 transition">Sobre Mí</a>
+                <a href="#contacto" class="hover:text-brand-500 transition">Contacto</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#contacto" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm transition shadow-lg shadow-brand-600/20">
+                    Agendar Reunión
+                </a>
+                <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#inicio" class="block text-slate-300 hover:text-brand-500 font-medium">Inicio</a>
+            <a href="#servicios" class="block text-slate-300 hover:text-brand-500 font-medium">Consultoría (AfteRH Talent)</a>
+            <a href="#stream" class="block text-slate-300 hover:text-brand-500 font-medium">AfteRH Office Stream</a>
+            <a href="#sobre-mi" class="block text-slate-300 hover:text-brand-500 font-medium">Sobre Mí</a>
+            <a href="#contacto" class="block text-slate-300 hover:text-brand-500 font-medium">Contacto</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-gradient py-20 lg:py-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-sparkles"></i> Talent Acquisition & Contenido Real
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-none">
+                        AfteRH Talent <br class="hidden sm:inline"><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-indigo-400">sin caretas corporativas.</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Soluciones estratégicas en selección IT <strong class="text-white font-semibold">Consultoria RRHH</strong>, y entrevistas a expertos sobre empleo, selección en el stream <strong class="text-white font-semibold">AfteRH Office</strong>.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#servicios" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-center transition shadow-xl shadow-brand-600/30 flex items-center justify-center gap-2">
+                            <span>Ver Servicios</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AfterOfficeB" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-bold text-center transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-youtube text-red-500 text-xl"></i> <span>Canal de YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md aspect-video lg:aspect-square bg-gradient-to-br from-brand-600/20 to-indigo-600/10 rounded-3xl p-4 border border-slate-800 shadow-2xl flex flex-col items-center justify-center text-center">
+                        <div class="absolute -top-4 -right-4 bg-brand-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 animate-pulse">
+                            <span class="w-2 h-2 rounded-full bg-green-400"></span> EN VIVO / MEDIA HUB
+                        </div>
+                        <i class="fa-solid fa-microphone-lines text-6xl text-brand-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">AfteRH Office Podcast</h3>
+                        <p class="text-sm text-slate-400 mb-4 px-6">Directo a tu pantalla para hablar de reclutamiento, tecnología y anécdotas del mundo laboral.</p>
+                        <a href="https://www.youtube.com/@AfterOfficeB/streams" target="_blank" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-xl transition shadow-md flex items-center gap-2">
+                            <i class="fa-solid fa-video"></i> Ver Streams Grabados
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS (AfteRH Talent) -->
+    <section id="servicios" class="py-24 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-400 text-xs font-bold uppercase tracking-widest bg-brand-500/10 px-3 py-1 rounded-md border border-brand-500/20">AfteRH Talent Consultora</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Servicios Profesionales de RRHH</h2>
+                <p class="text-slate-400">Soluciones de alto impacto diseñadas tanto para empresas que buscan escalar sus equipos como para profesionales que quieren potenciar su carrera.</p>
+                
+                <!-- Selector de Pestañas (B2B / B2C) -->
+                <div class="flex justify-center pt-6">
+                    <div class="bg-slate-950 p-1.5 rounded-2xl border border-slate-800 inline-flex gap-2">
+                        <button onclick="switchTab('b2b')" id="btn-b2b" class="px-6 py-2.5 rounded-xl text-sm font-bold transition bg-brand-600 text-white shadow">Para Empresas (B2B)</button>
+                        <button onclick="switchTab('b2c')" id="btn-b2c" class="px-6 py-2.5 rounded-xl text-sm font-bold transition text-slate-400 hover:text-white">Para Candidatos (B2C)</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenido B2B -->
+            <div id="tab-b2b" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-brand-500/50 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 flex items-center justify-center text-brand-400 text-xl font-bold mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">IT Recruiting & Selección</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Búsqueda end-to-end de perfiles tecnológicos especializados (.NET, Java, Python, React, Data, AI/ML, Project Managers) con validación técnica profunda.</p>
+                    </div>
+                    <a href="#contacto" class="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 font-semibold text-sm">
+                        <span>Solicitar propuesta</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+                <div class="bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-brand-500/50 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 flex items-center justify-center text-brand-400 text-xl font-bold mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-chess-board"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Consultoría en Talent Acquisition</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Diseño de embudos de contratación, optimización de ATS (Hiring Room, Bizneo), estructuración de entrevistas y reducción de time-to-hire.</p>
+                    </div>
+                    <a href="#contacto" class="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 font-semibold text-sm">
+                        <span>Optimizar procesos</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+                <div class="bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-brand-500/50 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 flex items-center justify-center text-brand-400 text-xl font-bold mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-users-viewfinder"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Workshops & Capacitaciones</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Talleres prácticos sobre clima organizacional, gestión de la incertidumbre, liderazgo y técnicas modernas de sourcing para equipos.</p>
+                    </div>
+                    <a href="#contacto" class="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 font-semibold text-sm">
+                        <span>Organizar workshop</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contenido B2C (Visible mediante JavaScript con display grid en lugar de hidden estricto) -->
+            <div id="tab-b2c" class="grid grid-cols-1 md:grid-cols-3 gap-8 hidden">
+                <div class="bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-brand-500/50 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 flex items-center justify-center text-brand-400 text-xl font-bold mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Rediseño y Optimización de CV</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Transforma tu CV en una herramienta de alto impacto optimizada para sistemas ATS y diseñada para captar la atención de recruiters técnicos.</p>
+                    </div>
+                    <a href="#contacto" class="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 font-semibold text-sm">
+                        <span>Mejorar mi CV</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+                <div class="bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-brand-500/50 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 flex items-center justify-center text-brand-400 text-xl font-bold mb-6 group-hover:scale-110 transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Optimización de Perfil LinkedIn</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Posicionamiento estratégico de tu marca personal, titular optimizado, extracto vendedor y palabras clave para aparecer en las búsquedas de los reclutadores.</p>
+                    </div>
+                    <a href="#contacto" class="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 font-semibold text-sm">
+                        <span>Potenciar mi LinkedIn</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+                <div class="bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-brand-500/50 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 flex items-center justify-center text-brand-400 text-xl font-bold mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Simulacro de Entrevistas</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Entrevista técnica o general de práctica con feedback detallado en vivo, manejo de pretensiones salariales y técnicas para superar procesos exitosamente.</p>
+                    </div>
+                    <a href="#contacto" class="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 font-semibold text-sm">
+                        <span>Agendar simulacro</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MEDIA & STREAM (AfteRH Office) -->
+    <section id="stream" class="py-24 border-t border-slate-800 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-red-400 text-xs font-bold uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-md border border-red-500/20">Media Hub & Comunidad</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">AfteRH Office: El Lado B de RRHH</h2>
+                <p class="text-slate-400">Nuestro espacio de streaming y charlas sin filtro sobre empleo, tecnología, recruiters y catarsis laboral.</p>
+                <div class="flex justify-center gap-4 pt-2">
+                    <a href="https://www.youtube.com/@AfterOfficeB" target="_blank" class="px-4 py-2 bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white border border-red-500/30 rounded-xl text-xs font-bold transition flex items-center gap-2">
+                        <i class="fa-brands fa-youtube"></i> Canal Oficial
+                    </a>
+                    <a href="https://www.youtube.com/@AfterOfficeB/streams" target="_blank" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 rounded-xl text-xs font-bold transition flex items-center gap-2">
+                        <i class="fa-solid fa-video"></i> Ver Streams
+                    </a>
+                </div>
+            </div>
+
+            <!-- Grid de Videos de YouTube Proporcionados -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 flex flex-col">
+                    <div class="aspect-video w-full bg-slate-950">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/7epmtFA1Mho" title="AfteRH Office Episodio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-400 uppercase tracking-wider">Episodio Destacado</span>
+                            <h3 class="text-lg font-bold text-white mt-1 mb-2">Debates y Análisis del Mercado</h3>
+                            <p class="text-sm text-slate-400">Discusiones abiertas sobre selección de personal, vivencias en recruiting y el lado B de las empresas.</p>
+                        </div>
+                        <a href="https://youtu.be/7epmtFA1Mho" target="_blank" class="mt-4 text-xs font-bold text-red-400 hover:text-red-300 flex items-center gap-1.5">
+                            Ver en YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 flex flex-col">
+                    <div class="aspect-video w-full bg-slate-950">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/KPShQyAZrqU" title="AfteRH Office Episodio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-400 uppercase tracking-wider">Episodio Destacado</span>
+                            <h3 class="text-lg font-bold text-white mt-1 mb-2">Revisión de CVs y Catarsis</h3>
+                            <p class="text-sm text-slate-400">Análisis en directo de perfiles profesionales, consejos prácticos para candidatos y humor corporativo.</p>
+                        </div>
+                        <a href="https://youtu.be/KPShQyAZrqU" target="_blank" class="mt-4 text-xs font-bold text-red-400 hover:text-red-300 flex items-center gap-1.5">
+                            Ver en YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 flex flex-col">
+                    <div class="aspect-video w-full bg-slate-950">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/2esMXRpmrBc" title="AfteRH Office Episodio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-400 uppercase tracking-wider">Episodio Destacado</span>
+                            <h3 class="text-lg font-bold text-white mt-1 mb-2">Estrategias de Empleabilidad</h3>
+                            <p class="text-sm text-slate-400">Entrevistas, tendencias de contratación IT y todo lo que necesitás saber sobre el mercado laboral actual.</p>
+                        </div>
+                        <a href="https://youtu.be/2esMXRpmrBc" target="_blank" class="mt-4 text-xs font-bold text-red-400 hover:text-red-300 flex items-center gap-1.5">
+                            Ver en YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ SECTION -->
+    <section id="sobre-mi" class="py-24 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl overflow-hidden border-2 border-brand-500/40 shadow-2xl">
+                        <img src="C:\Users\Mi PC\Downloads\img\1756330060167.jpg" alt="Nicolás Villalba" class="w-full h-full object-cover filter grayscale contrast-125 sepia-[0.3]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-center">
+                            <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">Fundador & Consultor</span>
+                            <h4 class="text-lg font-extrabold text-white">Nicolás Villalba</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-brand-400 text-xs font-bold uppercase tracking-widest bg-brand-500/10 px-3 py-1 rounded-md border border-brand-500/20">Sobre Mí</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Experiencia real en selección y talento tecnológico</h2>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        Soy Licenciado en Relaciones Laborales, Senior IT Recruiter y Talent Acquisition Specialist. A través de <strong class="text-white font-semibold">AfteRH Talent</strong>, ayudo a empresas a conectar con los mejores perfiles tecnológicos y acompaño a profesionales a escalar en sus carreras de forma estratégica y directa.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Además, co-conduzco el espacio de contenido y streaming <strong class="text-white font-semibold">AfteRH Office</strong>, donde desmitificamos los procesos de selección y analizamos las tendencias del mercado laboral sin caretas ni formalismos innecesarios.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                            <div class="text-2xl font-extrabold text-brand-400 mb-1">+5 Años</div>
+                            <div class="text-xs text-slate-400">Experiencia en End-to-End Recruiting</div>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                            <div class="text-2xl font-extrabold text-brand-400 mb-1">Tech & General</div>
+                            <div class="text-xs text-slate-400">Especialistas en perfiles IT y mandos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-24 border-t border-slate-800 bg-slate-950">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-400 text-xs font-bold uppercase tracking-widest bg-brand-500/10 px-3 py-1 rounded-md border border-brand-500/20">Hablemos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Iniciá tu consulta o propuesta</h2>
+                <p class="text-slate-400">Completá el formulario y nos pondremos en contacto a la brevedad.</p>
+            </div>
+
+            <div class="bg-slate-900 rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-2xl">
+                <form onsubmit="handleForm(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Nombre y Apellido</label>
+                            <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 text-sm transition" placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Correo Electrónico</label>
+                            <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 text-sm transition" placeholder="juan@correo.com">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Tipo de Consulta</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500 text-sm transition">
+                                <option>Soy Empresa (Servicios B2B / Recruiting)</option>
+                                <option>Soy Candidato (CV / LinkedIn / Entrevistas)</option>
+                                <option>Propuesta para el Podcast / Stream</option>
+                                <option>Otro Motivo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Canal preferido</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500 text-sm transition">
+                                <option>Correo Electrónico</option>
+                                <option>WhatsApp</option>
+                                <option>Videollamada de Diagnóstico</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Mensaje o Detalles</label>
+                        <textarea rows="4" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 text-sm transition" placeholder="Contanos brevemente qué necesitas..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm transition shadow-lg shadow-brand-600/30">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <span class="text-lg font-extrabold text-white">Afte<span class="text-brand-500">RH</span> Office & Talent</span>
+            </div>
+            <p class="text-xs text-slate-500 text-center">© 2026 Nicolás Villalba. Todos los derechos reservados.</p>
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="https://www.youtube.com/@AfterOfficeB" target="_blank" class="hover:text-brand-400 transition"><i class="fa-brands fa-youtube text-lg"></i></a>
+                <a href="https://www.youtube.com/@AfterOfficeB/streams" target="_blank" class="hover:text-brand-400 transition"><i class="fa-solid fa-video text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC CORREGIDA PARA MOSTRAR B2C -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function switchTab(type) {
+            const btnB2b = document.getElementById('btn-b2b');
+            const btnB2c = document.getElementById('btn-b2c');
+            const tabB2b = document.getElementById('tab-b2b');
+            const tabB2c = document.getElementById('tab-b2c');
+
+            if(type === 'b2b') {
+                btnB2b.className = "px-6 py-2.5 rounded-xl text-sm font-bold transition bg-brand-600 text-white shadow";
+                btnB2c.className = "px-6 py-2.5 rounded-xl text-sm font-bold transition text-slate-400 hover:text-white";
+                tabB2b.classList.remove('hidden');
+                tabB2c.classList.add('hidden');
+            } else {
+                btnB2c.className = "px-6 py-2.5 rounded-xl text-sm font-bold transition bg-brand-600 text-white shadow";
+                btnB2b.className = "px-6 py-2.5 rounded-xl text-sm font-bold transition text-slate-400 hover:text-white";
+                tabB2c.classList.remove('hidden');
+                tabB2b.classList.add('hidden');
+            }
+        }
+
+        function handleForm(e) {
+            e.preventDefault();
+            alert('¡Mensaje enviado con éxito! Nos pondremos en contacto a la brevedad.');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
